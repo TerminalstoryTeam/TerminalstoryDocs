@@ -1,0 +1,61 @@
+site_name: Terminal Story 文档
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: green
+    accent: green
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - language.selector
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+  language: zh
+
+plugins:
+  - search
+
+extra:
+  alternate:
+    - name: English
+      link: '../'
+      lang: en
+    - name: 中文
+      link: ''
+      lang: zh
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - 主页: README.zh.md
+  - 介绍:
+    - 导航命令: utility/navigation.zh.md
+    - 系统命令: utility/system.zh.md
+    - 社交命令: utility/social.zh.md
+  - 入门指南:
+    - 概述: zh/getting-started/README.md
+  - StoryForge:
+    - 概述: storyforge/README.zh.md
+    - 阅读故事: storyforge/reading.zh.md
+    - 角色数据库: storyforge/characters.zh.md
+    - 故事操纵 (SWAY): storyforge/sway.zh.md
+    - 高级系统: storyforge/advanced-systems.zh.md
+  - Cybernet:
+    - 概述: cybernet/README.zh.md
+  - DAEMON 接口:
+    - 概述: daemon/README.zh.md
+    - 最佳实践: daemon/best-practices.zh.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html 

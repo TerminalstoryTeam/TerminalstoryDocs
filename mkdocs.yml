@@ -1,0 +1,79 @@
+site_name: Terminal Story
+theme:
+  name: material
+  logo: assets/Logo.webp
+  favicon: assets/Logo.webp
+  palette:
+    scheme: slate
+    primary: custom
+    accent: custom
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+# Custom color definitions
+extra:
+  generator: false
+
+nav:
+  - English 🌐:
+    - Introduction:
+      - Home: README.md
+    - Basic Commands:
+      - Navigation Commands: utility/navigation.md
+      - System Commands: utility/system.md
+      - Social Commands: utility/social.md
+    - Getting Started:
+      - Overview: getting-started/README.md
+    - StoryForge:
+      - Overview: storyforge/README.md
+      - Reading Stories: storyforge/reading.md
+      - Character Database: storyforge/characters.md
+      - Story Manipulation (SWAY): storyforge/sway.md
+      - Advanced Systems: storyforge/advanced-systems.md
+    - Cybernet:
+      - Overview: cybernet/README.md
+    - DAEMON Interface:
+      - Overview: daemon/README.md
+      - Best Practices: daemon/best-practices.md
+  - 中文 🇨🇳:
+    - 主页: README.zh.md
+    - 介绍:
+      - 导航命令: utility/navigation.zh.md
+      - 系统命令: utility/system.zh.md
+      - 社交命令: utility/social.zh.md
+    - 入门指南:
+      - 概述: zh/getting-started/README.md
+    - StoryForge:
+      - 概述: storyforge/README.zh.md
+      - 阅读故事: storyforge/reading.zh.md
+      - 角色数据库: storyforge/characters.zh.md
+      - 故事操纵 (SWAY): storyforge/sway.zh.md
+      - 高级系统: storyforge/advanced-systems.zh.md
+    - Cybernet:
+      - 概述: cybernet/README.zh.md
+    - DAEMON 接口:
+      - 概述: daemon/README.zh.md
+      - 最佳实践: daemon/best-practices.zh.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
