@@ -1,4 +1,3 @@
 mkdocs
-# Add any additional plugins or dependencies here, e.g.,
-# mkdocs-material
-# mkdocs-static-i18n 
+mkdocs-material
+mkdocs-static-i18n 
