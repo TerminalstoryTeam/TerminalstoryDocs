@@ -1,5 +1,17 @@
 {
-  "buildCommand": "pip install -r requirements.txt && mkdocs build",
+  "version": 2,
+  "builds": [{
+    "src": "mkdocs.yml",
+    "use": "@vercel/python",
+    "config": {
+      "maxLambdaSize": "15mb",
+      "runtime": "python3.8"
+    }
+  }],
+  "buildCommand": "pip3 install mkdocs mkdocs-material mkdocs-static-i18n && mkdocs build",
   "outputDirectory": "site",
-  "installCommand": "pip install -r requirements.txt"
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "/site/$1"
+  }]
 } 

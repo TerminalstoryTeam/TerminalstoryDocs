@@ -1,0 +1,12 @@
+{
+  "name": "terminalstory-docs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "mkdocs build",
+    "dev": "mkdocs serve"
+  },
+  "dependencies": {
+    "mkdocs": "^0.2.1",
+    "mkdocs-material": "^9.5.3"
+  }
+} 
