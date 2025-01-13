@@ -1,4 +1,5 @@
 site_name: Terminal Story
+site_url: https://terminalstory.vercel.app/
 theme:
   name: material
   logo: assets/Logo.webp

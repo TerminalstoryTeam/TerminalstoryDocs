@@ -4,6 +4,6 @@
       "PYTHON_VERSION": "3.8"
     }
   },
-  "buildCommand": "pip install -r requirements.txt && mkdocs build",
+  "buildCommand": "pip install -r requirements.txt && mkdocs build && mkdocs build -f mkdocs.zh.yml -d site/zh",
   "outputDirectory": "site"
 } 

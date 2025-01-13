@@ -1,4 +1,5 @@
 site_name: Terminal Story 文档
+site_url: https://terminalstory.vercel.app/zh/
 theme:
   name: material
   palette:
@@ -27,7 +28,7 @@ extra:
       link: '../'
       lang: en
     - name: 中文
-      link: ''
+      link: './'
       lang: zh
 
 extra_css:
