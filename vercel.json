@@ -8,10 +8,10 @@
       "runtime": "python3.8"
     }
   }],
-  "buildCommand": "pip3 install mkdocs mkdocs-material mkdocs-static-i18n && mkdocs build",
-  "outputDirectory": "site",
-  "routes": [{
-    "src": "/(.*)",
-    "dest": "/site/$1"
-  }]
+  "buildCommand": "pip3 install mkdocs mkdocs-material mkdocs-static-i18n && mkdocs build --site-dir=public",
+  "outputDirectory": "public",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 } 
