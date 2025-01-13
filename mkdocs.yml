@@ -2,8 +2,8 @@ site_name: Terminal Story
 site_url: https://terminalstory.vercel.app/
 theme:
   name: material
-  logo: assets/Logo.webp
-  favicon: assets/Logo.webp
+  logo: assets/Logo.png
+  favicon: assets/Logo.png
   palette:
     scheme: slate
     primary: custom
