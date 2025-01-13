@@ -1,5 +1,0 @@
-{
-  "framework": "mkdocs",
-  "buildCommand": "mkdocs build",
-  "outputDirectory": "site"
-} 
